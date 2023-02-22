@@ -3,24 +3,18 @@
 # Toda llamada que dure 3 minutos o menos  tiene un costo de $300
 # Cada minuto adicional cuesta $50 pesos
 
-print("-----------------------------------")
-print("----------INGRESAR NUMERO----------")
-print("-----------------------------------")
-
 # input
-x = int(input("INGRESE UN MUMERO: "))
+
+minutos = int(input("ingrese los minutos de la llamada: "))
 
 # processing
 
-if x >4:
-    y = 300
+if minutos < 3:
+    costo = 300
 
 else:
-    y = (x * 50) + 50
+    costo = (minutos * 50) +300 -150
 
 # ouput
-print("---------------------------------")
-print("-------------RESULTADO-----------")
-print("---------------------------------")
 
-print ("los gastos totales son " + str(y))
+print(" el costo de la llamada es: " + str(costo))
